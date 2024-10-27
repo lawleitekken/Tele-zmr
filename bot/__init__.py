@@ -298,7 +298,7 @@ if len(USER_SESSION_STRING) != 0:
             system_version="@Z_Mirror Server",
         ).start()
         IS_PREMIUM_USER = user.me.is_premium # type: ignore
-        log_info(f"Successfully logged into @{user.me.username} DC: {user.session.dc_id}.") # type: ignore
+        log_info(f"Hey Successfully logged into @{user.me.username} DC: {user.session.dc_id}.") # type: ignore
         if user.me.is_bot: # type: ignore
             log_error("You added bot string in USER_SESSION_STRING which is not allowed!")
             user.stop() # type: ignore
@@ -1298,7 +1298,7 @@ BASE += ("oAtiUyppVYRQkuWg8DG2p")
 
 bot_loop = bot.loop # type: ignore
 bot_name = bot.me.username # type: ignore
-log_info(f"Starting Bot @{bot_name} DC: {bot.session.dc_id}.") # type: ignore
+log_info(f"Hiii Starting Bot @{bot_name} DC: {bot.session.dc_id}.") # type: ignore
 
 scheduler = AsyncIOScheduler(
     timezone=str(get_localzone()),
